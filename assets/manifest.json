@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Junk Job Filter",
+  "description": "Free open source extension that allows you to filter out junk jobs you are tired to see reposted daily.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "gmKIT88Ha1z8VBMJFOOH.png"
+  },
+  "options_page": "options.html",
+  "permissions": ["activeTab", "contextMenus", "storage"],
+  "optional_permissions": [],
+  "host_permissions": ["https://www.linkedin.com/jobs/search/*"],
+  "optional_host_permissions":[],
+  "icons": {},
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://www.linkedin.com/jobs/search/*"
+      ]
+    }
+  ]
+}

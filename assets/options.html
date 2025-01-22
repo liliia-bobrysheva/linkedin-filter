@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Custom filter options</title>
+</head>
+
+<body>
+  <h1>Custom filter options</h1>
+
+  <button>Create backup</button> <button>Restore backup</button>
+
+  <h2>By Name</h2>
+  <label>
+    Job name
+    <textarea id="name">
+/(Data Engineer)/gmi
+/(Site Reliability Engineer)/gmi
+/(Lead Data Engineer)/gmi
+/(Lead QA Engineer)/gmi
+    </textarea>
+  </label>
+
+  <button>Add</button>
+
+  <h2>By Company Name</h2>
+  <label>
+    Company name
+    <input type="text" id="companyname" />
+  </label>
+  <button>Add</button>
+
+  <h2>By Combination</h2>
+  <label>
+    Job name
+    <input type="text" id="combination-job" />
+
+  </label>
+  <label>
+    Company name
+    <input type="text" id="combination-company" />
+
+  </label>
+  <label>
+    Location
+    <input type="text" id="combination-location" />
+  </label>
+
+  <button>Add</button>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

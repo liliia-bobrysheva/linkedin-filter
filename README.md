@@ -1,12 +1,12 @@
 # Welcome
 
-This extension adds a widget to the LinkedIn Jobs search page https://www.linkedin.com/jobs/search/. The widget allows you to highlight and automatically close job search results that match the criteria described in the `src/constants.ts file`. This enables you to exclude job postings based on a specific company name, role, location, or a combination of these fields.
+This extension adds a widget to the LinkedIn Jobs search page https://www.linkedin.com/jobs/search/. The widget allows you to highlight and automatically close job search results that match the criteria described in the `src/rules.ts file`. This enables you to exclude job postings based on a specific company name, role, location, or a combination of these fields.
 
 Please note that before using the extension, you must manually scroll to the bottom of the page. Currently, the extension cannot process search results that have not yet been rendered by the browser.
 
 ![image](https://github.com/user-attachments/assets/6e7016cd-f050-4c97-a48d-a7f3f1c7e3db)
 
-**Process** button changes opacity and size all the results that match one or more criteria described in `src/constants.ts`:
+**Process** button changes opacity and size all the results that match one or more criteria described in `src/rules.ts`:
 ![image](https://github.com/user-attachments/assets/940aedcc-f03b-4580-8b06-964d72a3ee06)
 
 **Close Excluded Jobs** button closes all results that were highlighted after clicking **Process** button
@@ -25,7 +25,7 @@ Run the following command to install dependencies:
 >npm install
 
 ## Usage
-- Configure your filter preferences in `src/constants.ts`.
+- Configure your filter preferences in `src/rules.ts`.
 - Build the extension by running `npm run build`
 - Open the Chrome extensions page [chrome://extensions/](chrome://extensions/) and load your custom extension from the `dist` folder (loading custom extension requires Chrome Developer mode enabled)
-> **Note:** The extension needs to be rebuilt and reloaded in chrome each time when changes are made to `src/constants.ts`
+> **Note:** The extension needs to be rebuilt and reloaded in chrome each time when changes are made to `src/rules.ts`
